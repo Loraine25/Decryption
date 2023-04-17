@@ -54,3 +54,6 @@ for encrypted in encrypted_message:
 #Print the output
 print(f"\n\033[96;1;3mEncrypted Message: \033[0m" + encrypted_message)
 print("\033[96;1;3mDecrypted Message: \033[0m" + decrypted_message)
+
+print("")
+print("\033[;33;1;3mJob well done, it's nice to meet you!\033[0m".center(84, "~"))
