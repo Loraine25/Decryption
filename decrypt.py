@@ -21,3 +21,32 @@ print("\033[;45;1;3m*\033[0m" * 70)
 #Instruct the user to enter the encrypted message.
 encrypted_message = input(f"\n\033[45;1;3mInput your encrypted message: \033[0m")
 decrypted_message = ""
+
+#Count the number of letters you input.
+characters_counter = len(encrypted_message)
+print(f"\n\033[1mThe count of the characters you have entered is", characters_counter)
+
+#Turn the encrypted to decrypted message
+for encrypted in encrypted_message: 
+
+#   If this symbol "*" is/are in the message, change it to letter a
+    if "*" in encrypted:
+        decrypted_message += "a"
+
+#   If this symbol "&" is/are in the message, change it to letter e
+    elif "&" in encrypted:
+        decrypted_message += "e"
+
+#   If this symbol "#" is/are in the message, change it to letter i
+    elif "#" in encrypted:
+        decrypted_message += "i"
+
+#   If this symbol "+" is/are in the message, change it to letter o
+    elif "+" in encrypted:
+        decrypted_message += "o"
+
+#   If this symbol "!" is/are in the message, change it to letter u
+    elif "!" in encrypted:
+        decrypted_message += "u"
+    else:
+        decrypted_message += encrypted
