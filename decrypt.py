@@ -17,3 +17,7 @@ print("")
 print("\033[;45;1;3m*\033[0m" * 70)
 print("\033[;1;3mChill and do amazing stuff with me!\033[0m".center(81))
 print("\033[;45;1;3m*\033[0m" * 70)
+
+#Instruct the user to enter the encrypted message.
+encrypted_message = input(f"\n\033[45;1;3mInput your encrypted message: \033[0m")
+decrypted_message = ""
